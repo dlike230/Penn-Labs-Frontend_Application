@@ -1,0 +1,14 @@
+/*
+Header styling
+*/
+
+h1{
+	font-size:275%;
+	font-weight:bold;
+	width:65%;
+	margin:auto;
+	display:block;
+	margin-top:40px;
+	margin-bottom:40px;
+	color:black;
+}

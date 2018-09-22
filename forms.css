@@ -1,0 +1,36 @@
+#information_form{
+	max-width: 7in;
+	min-width: 400px;
+	width:70%;
+	display:block;
+	margin:auto;
+}
+
+#information_form button{
+	display:block;
+	margin:auto;
+	margin-top:2%;
+}
+
+.btn-black{
+	background: #343a40;
+	border-color: #343a40;
+	transition:500ms ease all;
+	color:white;
+	border-radius:0;
+}
+.btn-black:hover, .btn-black:focus { 
+	background: #23272b;
+	border-color:#1d2124;
+	color:white;
+}
+.btn-black:focus, .btn-black:active{
+	box-shadow: 0 0 0 0.2rem rgba(52,58,64,.5);
+	background: #343a40;
+	border-color:#343a40;
+	outline:0;
+	border:none;
+}
+#information_form input, #information_form label{
+	margin:0.8rem;
+}

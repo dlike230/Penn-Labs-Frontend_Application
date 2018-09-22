@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+    <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  
+	<!-- Project-specific general CSS stylesheet -->
+	
+	<link rel = "stylesheet" type="text/css" href = "styles.css"/>
+	
+	<!-- Project-specific CSS for styling forms-->
+	
+	<link rel = "stylesheet" type="text/css" href = "forms.css"/>
+	
+	<!-- Project-specific CSS for styling navbar-->
+	
+	<link rel = "stylesheet" type="text/css" href = "navbar.css"/>
+
+    <title>Lenn Pabs</title>
+  </head>
+  <body>
+	<!-- Top navigation bar -->
+	<nav class="navbar" id = "top_navbar">
+	  <div class="container-fluid">
+		<div class="navbar-header">
+			<img id = "header_graphic" width = "100" height = "20" src = "dropdown_image.svg"/>
+		</div>
+		<ul class="nav navbar-nav navbar-right">
+		  <li class="active"><a href="#">Home</a></li>
+		  <li><a href="#">About</a></li>
+		  <li><a href="#">Projects</a></li>
+		  <li><a href="#">Blog</a></li>
+		  <li><a href="#">Contact</a></li>
+		  <li>
+			<div class="dropdown align-middle">
+			  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Categories
+			  <span class="caret"></span></button>
+			  <ul class="dropdown-menu">
+				<li><a href="#">Pizza</a></li>
+				<li><a href="#">Ice Cream</a></li>
+				<li><a href="#">Hamburgers</a></li>
+			  </ul>
+			</div>
+		  </li>
+		</ul>
+	  </div>
+	</nav>
+	<h1>Instantly reach us by filling out the form below</h1>
+	<form class="form-inline" action="/action_page.php"
+		id = "information_form">
+	  <div class="form-group">
+		<label for="name">Hi there, my name is</label>
+		<input type="text" class="form-control" id="name"/>
+		<label for="topic">I want to speak about</label>
+		<input type="text" class="form-control" id="topic"/>
+		<label for="email">You can reach me via email at</label>
+		<input type="email" class="form-control" id="email"/>	
+		<label for="phone">or</label>
+		<input type="phone" class="form-control" id="phone"/>			
+		<label for="ballpark">My ballpark for this project is</label>
+		<input type="phone" class="form-control" id="ballpark"/>					
+		<label for="ballpark">US dollars.</label>		
+	  </div>
+	  <button type="submit" class="btn btn-black">Submit</button>
+	</form>
+	<!-- External JS libraries -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>

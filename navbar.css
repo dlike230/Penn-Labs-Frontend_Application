@@ -1,0 +1,85 @@
+/*
+Top navbar styling
+*/
+#top_navbar{
+	background-color:#33414A;
+	border-radius:0;
+}
+
+#top_navbar *{
+	color:#e3e3e3;
+}
+
+/*
+Animates the hover effect of the top navbar
+*/
+#top_navbar a{
+	transition: 250ms ease color;
+}
+
+/*
+Sets hover effect to only include color change
+*/
+#top_navbar a:hover, #top_navbar a:active, #top_navbar a:focus{
+	background-color:#33414A;
+}
+
+#top_navbar li{
+	margin-left: 1em;
+}
+
+#top_navbar a:hover{
+	color:#a3b3bc;
+}
+
+/*
+Dropdown styling
+*/
+#top_navbar .dropdown button:active{
+	outline:none;
+	border-color:#acacac;	
+}
+
+#top_navbar .dropdown button{
+	margin-right: 2em;	
+	border-color:#acacac;
+	border-style:solid;
+	border-width:1px;
+	background:transparent;
+	margin-top:7px;
+	border-radius:10px;
+}
+
+#top_navbar .dropdown-menu{
+	background-color:white;
+	margin-top:1em;
+	margin-right:1em;
+	color:#888a8c;
+	max-width:5em;	
+}
+
+#top_navbar .dropdown-menu li{
+	margin:auto;
+}
+
+#top_navbar .dropdown-menu a{
+	color:#888a8c;	
+	text-align:center;
+	margin:auto;
+	transition:250ms ease background;
+}
+
+#top_navbar .dropdown-menu a:hover{
+	background-color:#c4dfee;
+}
+
+/*
+Header image styling
+*/
+
+#header_graphic{
+	margin-top:15%;
+	/*
+	centers the header graphic vertically
+	*/
+}
