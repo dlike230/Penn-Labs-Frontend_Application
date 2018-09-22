@@ -19,6 +19,15 @@
 	<!-- Project-specific CSS for styling navbar-->
 	
 	<link rel = "stylesheet" type="text/css" href = "navbar.css"/>
+			
+	<!-- Project-specific CSS for styling cart-->
+	
+	<link rel = "stylesheet" type="text/css" href = "cart.css"/>
+	
+				
+	<!-- Project-specific CSS for extra animations-->
+	
+	<link rel = "stylesheet" type="text/css" href = "animations.css"/>
 
     <title>Lenn Pabs</title>
   </head>
@@ -31,10 +40,10 @@
 		</div>
 		<ul class="nav navbar-nav navbar-right">
 		  <li class="active"><a href="#">Home</a></li>
-		  <li><a href="#">About</a></li>
-		  <li><a href="#">Projects</a></li>
+		  <li><a href="#about">About</a></li>
+		  <li><a href="#projects">Projects</a></li>
 		  <li><a href="#">Blog</a></li>
-		  <li><a href="#">Contact</a></li>
+		  <li><a href="#contact">Contact</a></li>
 		  <li>
 			<div class="dropdown align-middle">
 			  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Categories
@@ -49,27 +58,82 @@
 		</ul>
 	  </div>
 	</nav>
-	<h1>Instantly reach us by filling out the form below</h1>
-	<form class="form-inline" action="/action_page.php"
-		id = "information_form">
-	  <div class="form-group">
-		<label for="name">Hi there, my name is</label>
-		<input type="text" class="form-control" id="name"/>
-		<label for="topic">I want to speak about</label>
-		<input type="text" class="form-control" id="topic"/>
-		<label for="email">You can reach me via email at</label>
-		<input type="email" class="form-control" id="email"/>	
-		<label for="phone">or</label>
-		<input type="phone" class="form-control" id="phone"/>			
-		<label for="ballpark">My ballpark for this project is</label>
-		<input type="phone" class="form-control" id="ballpark"/>					
-		<label for="ballpark">US dollars.</label>		
-	  </div>
-	  <button type="submit" class="btn btn-black">Submit</button>
-	</form>
+	<!-- Welcome header -->
+	<div id = "about" class = "container">
+		<h2>
+		Welcome to Lenn Pabs!
+		</h2>
+		
+		<p class = "lead">
+			We're the hottest tech company in Silicon Valley. Take a look at our site to learn more about us and what we do.
+		</p>
+	</div>
+	<!-- Contact form -->
+	<div class = "container" id = "contact">
+		<h2>Instantly reach us by filling out the form below</h2>
+		<form class="form-inline" action="/action_page.php"
+			id = "contact_container">
+		  <div class="form-group">
+			<label for="name">Hi there, my name is</label>
+			<input type="text" class="form-control" id="name" placeholder = "how people call you"/>
+			<label for="topic">I want to speak about</label>
+			<input type="text" class="form-control" id="topic" placeholder = "what's the problem"/>
+			<label for="email">You can reach me via email at</label>
+			<input type="email" class="form-control" id="email" placeholder = "the real one"/>
+			<label for="phone">or</label>
+			<input type="phone" class="form-control" id="phone" placeholder = "skype, phone, codename"/>			
+			<label for="ballpark">My ballpark for this project is</label>
+			<input type="phone" class="form-control" id="ballpark" placeholder = "$$$$"/>			
+			<label for="ballpark">US dollars.</label>		
+		  </div>
+		  <button type="submit" class="btn btn-black">Submit</button>
+		</form>
+	</div>
+	
+	<!-- Buying area -->
+		<div class = "container" id = "projects">
+		<h2>Buy our stuff!</h2>
+	</div>
+	
+	<div class="cd-cart-container empty">
+	   <a href="#0" class="cd-cart-trigger">
+		  Cart
+		  <ul class="count"><!-- cart items count -->
+			 <li>0</li>
+			 <li>0</li>
+		  </ul> <!-- .count -->
+	   </a>
+
+	   <div class="cd-cart">
+		  <div class="wrapper">
+			 <header>
+				<h2>Cart</h2>
+				<span class="undo">Item removed. <a href="#0">Undo</a></span>
+			 </header>
+		  
+			 <div class="body">
+				<ul>
+					<div id ="test">
+					hi
+					</div>
+				   <!-- products added to the cart will be inserted here using JavaScript -->
+				</ul>
+			 </div>
+
+			 <footer>
+				<a href="#0" class="checkout btn"><em>Checkout - $<span>0</span></em></a>
+			 </footer>
+		  </div>
+	   </div> <!-- .cd-cart -->
+	</div>
+	
 	<!-- External JS libraries -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+	<!-- Script for extra animation -->
+	
+	<script src ="animations.js" language = "javascript"></script>
   </body>
 </html>

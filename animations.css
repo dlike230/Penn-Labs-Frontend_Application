@@ -1,0 +1,40 @@
+@keyframes text_fadein{
+	0%{
+		opacity:0;
+	}
+	100%{
+		opacity:1;
+	}
+}
+
+@keyframes button_wobble{
+	0%{
+		transform:rotate(-30deg);
+	}
+	25%{
+		transform:rotate(25deg);
+	}
+	50%{
+		transform:rotate(-15deg);
+	}
+	75%{
+		transform:rotate(10deg);
+	}
+	100%{
+		transform:rotate(0deg);
+	}
+}
+
+/*
+Content fade-in animation
+*/
+p,h1,h2,h3,h4,h5,h6,form,container{
+	animation:text_fadein 750ms ease;
+}
+
+/*
+button wobble animation
+*/
+button:hover{
+	animation:button_wobble 500ms linear;
+}

@@ -1,4 +1,28 @@
-#information_form{
+/*
+Generic styling for forms
+*/
+input:not(*[type="submit"]){
+	border: 0;
+	outline: 0;
+	background: transparent;
+	border-bottom: 1px solid #c4c4c4;
+	border-radius:0;
+	text-align:center;
+	color: #c0c0c0;
+}
+
+/*
+Removes Bootstrap's default box-shadow styling
+*/
+input:not(*[type="submit"]),input:not(*[type="submit"]):hover,input:not(*[type="submit"]):active,input:not(*[type="submit"]):focus{
+	box-shadow:none;
+}
+
+
+/*
+Styling for form on front page
+*/
+#contact_container{
 	max-width: 7in;
 	min-width: 400px;
 	width:70%;
@@ -6,7 +30,7 @@
 	margin:auto;
 }
 
-#information_form button{
+#contact_container button{
 	display:block;
 	margin:auto;
 	margin-top:2%;
@@ -31,6 +55,8 @@
 	outline:0;
 	border:none;
 }
-#information_form input, #information_form label{
+#contact_container input, #contact_container label{
 	margin:0.8rem;
+	font-weight:100;
+	color:black;
 }
