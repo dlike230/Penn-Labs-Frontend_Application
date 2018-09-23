@@ -52,8 +52,6 @@ Besides the navbar, other parts of the page shrink to fit smaller screens, altho
 
 * **Daniel Like**
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
 ## Acknowledgments
 
 *Looked at code from https://codyhouse.co/gem/add-to-cart-interaction/ to get a basic idea of how to implement the cart. Also adapted some of the SVG graphics from this source.
