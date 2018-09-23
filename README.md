@@ -26,7 +26,7 @@ It also shrinks back to its initial size if the user clicks outside of the cart.
 ## Animations
 
 I created most animations from scratch, using a combination of CSS and modification of the HTML DOM in JavaScript.
-Some example animations include
+Some example animations include:
 
 * The wobbling of buttons on hover
 * Button color fading
