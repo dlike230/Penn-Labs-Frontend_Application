@@ -1,4 +1,4 @@
-#Daniel Like - Penn Labs Front-End Coding Challenge
+# Daniel Like - Penn Labs Front-End Coding Challenge
 
 ## Getting Started
 
@@ -28,9 +28,9 @@ It also shrinks back to its initial size if the user clicks outside of the cart.
 I created most animations from scratch, using a combination of CSS and modification of the HTML DOM in JavaScript.
 Some example animations include
 
-*The wobbling of buttons on hover
-*Button color fading
-*The appearance of a white border under navbar items on hover
+* The wobbling of buttons on hover
+* Button color fading
+* The appearance of a white border under navbar items on hover
 
 ## Graphics
 
