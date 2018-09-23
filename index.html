@@ -23,13 +23,25 @@
 	<!-- Project-specific CSS for styling cart-->
 	
 	<link rel = "stylesheet" type="text/css" href = "cart.css"/>
-	
 				
 	<!-- Project-specific CSS for extra animations-->
 	
 	<link rel = "stylesheet" type="text/css" href = "animations.css"/>
+	
+	<!-- Project-specific CSS for enhancements
+	Project still works normally without this stylesheet
+	-->
+	
+	<link rel = "stylesheet" type="text/css" href = "enhancements.css"/>
 
-    <title>Lenn Pabs</title>
+    <title>Lenn Pabs: The Hottest Company in Silicon Valley</title>
+	
+	<!-- SEO Enhancement:-->
+	
+	  <meta name="description" content="Lenn Pabs is the Hottest Company in the world, let alone Silicon Valley. Dosh Joman is CEO.">
+	  <meta name="keywords" content="Lenn, Pabs, Silicon, Valley, Dosh, Joman, Chiffany, Tang">
+	  <meta name="author" content="Daniel Like">
+	  
   </head>
   <body>
 	<!-- Top navigation bar -->
@@ -39,19 +51,19 @@
 			<img id = "header_graphic" width = "100" height = "20" src = "dropdown_image.svg"/>
 		</div>
 		<ul class="nav navbar-nav navbar-right">
-		  <li class="active"><a href="#">Home</a></li>
+		  <li class="active"><a href="#home">Home</a></li>
 		  <li><a href="#about">About</a></li>
 		  <li><a href="#projects">Projects</a></li>
-		  <li><a href="#">Blog</a></li>
+		  <li><a href="#about">Blog</a></li>
 		  <li><a href="#contact">Contact</a></li>
 		  <li>
 			<div class="dropdown align-middle">
 			  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Categories
 			  <span class="caret"></span></button>
 			  <ul class="dropdown-menu">
-				<li><a href="#">Pizza</a></li>
-				<li><a href="#">Ice Cream</a></li>
-				<li><a href="#">Hamburgers</a></li>
+				<li><a href="#contact">Reach Us</a></li>
+				<li><a href="#about">Our story</a></li>
+				<li><a href="#projects">Buy</a></li>
 			  </ul>
 			</div>
 		  </li>
@@ -74,7 +86,7 @@
 	<!-- Contact form -->
 	<div class = "container" id = "contact">
 		<h2>Instantly reach us by filling out the form below</h2>
-		<form class="form-inline" action="/action_page.php"
+		<form class="form-inline"
 			id = "contact_container">
 		  <div class="form-group">
 			<label for="name">Hi there, my name is</label>
@@ -89,7 +101,7 @@
 			<input type="phone" class="form-control" id="ballpark" placeholder = "$$$$"/>			
 			<label for="ballpark">US dollars.</label>		
 		  </div>
-		  <button type="submit" class="btn btn-black">Submit</button>
+		  <button type="submit" class="btn btn-black" onclick="generate_modal()">Submit</button>
 		</form>
 	</div>
 	
@@ -98,7 +110,7 @@
 	<!-- Buying area -->
 	<div class = "container" id = "projects">
 		<h2>Buy our stuff!</h2>
-		<p class = "lead">We sell the Lenn 100, our signature device, for only $350. Buy it right here!</p>
+		<p class = "lead">We sell the Lenn 100, our signature device, for only $300. Buy it right here!</p>
 		<button type="button" class="btn btn-success" id = "buy_button"
 			onclick="add_to_cart();">Buy</button>
 	</div>
@@ -128,16 +140,33 @@
 		</div>
 	</div>
 	
+	<!--Bootstrap modal
+	Only visible when the form is submitted-->
+	<div class="modal" tabindex="-1" role="dialog" id = "form_data_modal">
+	  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title">Your Information</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		  </div>
+		  <div class="modal-body">
+			<p></p>
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		  </div>
+		</div>
+	  </div>
+	</div>	
 	
-	<!-- External JS libraries -->
+	
+	<!-- External JS libraries required by Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
-	<!-- Script for extra animation -->
 	
-	<script src ="animations.js" language = "javascript"></script>
-	<script src ="cart.js" language = "javascript"></script>	
 	<footer><span>Developed by Daniel Like</span></footer>
   </body>
 </html>

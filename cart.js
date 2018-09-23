@@ -21,6 +21,7 @@ var full_cart_displayed = false;
 
 var cart_size = 0;
 
+//changes the chart size number displayed
 function update_cart_size_number(){
 	//sets cart transition so that the old number can move up, out of the red circle
 	cart_mini_number.style.transition = "300ms ease bottom";
@@ -43,6 +44,7 @@ function update_cart_size_number(){
 	},300);
 }
 
+//displays the cart once the first purchase has been made
 function display_cart(){
 	cart_mini.style.opacity = "1";
 	cart_mini.style.visibility = "visible";
@@ -63,6 +65,7 @@ function generate_cart_item_node(){
 	return node;
 }
 
+//adds a node to the cart
 function add_to_cart(){
 	if(!cart_displayed){
 		display_cart();
@@ -73,12 +76,15 @@ function add_to_cart(){
 	cart_list.appendChild(generate_cart_item_node());
 }
 
+//displays the full cart, instead of the small summary
 function display_full_cart(){
 	full_cart_displayed = true;
 	cart_mini_number_container.style.visibility = "hidden";
 	cart_container.setAttribute("class","triggered");
+	cart_container.getElementsByTagName("img")[0].setAttribute("src","cart_close.svg");
 }
 
+//reverts to the small summary, instead of the full cart
 function collapse_cart(){
 	full_cart_displayed = false;
 	cart_container.setAttribute("class","");	
@@ -86,6 +92,7 @@ function collapse_cart(){
 	setTimeout(function(){
 		cart_mini_number_container.style.visibility = "visible";
 		cart_container.setAttribute("class","gone");		
+		cart_container.getElementsByTagName("img")[0].setAttribute("src","cart_graphic.svg");		
 	},400);
 }
 

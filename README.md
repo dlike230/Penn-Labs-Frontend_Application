@@ -1,0 +1,59 @@
+#Daniel Like - Penn Labs Front-End Coding Challenge
+
+## Getting Started
+
+The website can be run by opening index.html.
+
+### Prerequisites
+
+A modern web browser such as Google Chrome or Mozilla Firefox is required to run this project. I did not have enough time to fully optimize for browsers other than chrome, so some animations or visual aspects of the page may not look as good in other browsers, i.e., due to prefixing of CSS3.
+
+## Using the Site
+
+The navbar at the top of the page links to different parts of the page.
+"About" leads to the top section of the page,  "Projects" leads to the purchasing area of the page,
+and "Contact" leads to the message-sending area of the page. The "Categories" dropdown contains buttons that are repetetive of these navbar links.
+
+
+The section of the page with a form produces a dialog box summarizing the submitted information when submitted.
+It will produce a message notifying the user that incomplete information has been provided if not all fields are filled in.
+
+The last section of the page, "Buy our Stuff," allows the user to add items to the cart by clicking on the "Buy" button.
+This button causes the cart to show up in the bottom right of the screen when first pressed, and increments the number on the cart after every subsequent press.
+The cart expands when clicked, showing all orders made. When the bottom right of the cart is pressed again, it shrinks back to its initial size.
+It also shrinks back to its initial size if the user clicks outside of the cart.
+
+## Animations
+
+I created most animations from scratch, using a combination of CSS and modification of the HTML DOM in JavaScript.
+Some example animations include
+
+*The wobbling of buttons on hover
+*Button color fading
+*The appearance of a white border under navbar items on hover
+
+## Graphics
+
+Several external graphics in the form of SVG (Scalable Vector Graphics) were used throughtout the page.
+Examples include the logo at the top left of the page and the cart open/close icons.
+
+## Responsive Design
+
+On narrow screens, the navbar at the top of the screen collapses such that all contingent buttons are displayed in a single column.
+Part of this adjustment is performed by Bootstrap, and some is manual adjustment that was necessary for the centering and spacing of the vertical menu.
+Besides the navbar, other parts of the page shrink to fit smaller screens, although the layout does not change significantly.
+
+## Built With
+
+* [Bootstrap](https://getbootstrap.com) - Used to simplify UI development
+* [JQuery](https://jquery.com/) - Used by Bootstrap, and required for some other code in the project
+
+## Authors
+
+* **Daniel Like**
+
+See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+
+## Acknowledgments
+
+*Looked at code from https://codyhouse.co/gem/add-to-cart-interaction/ to get a basic idea of how to implement the cart. Also adapted some of the SVG graphics from this source.

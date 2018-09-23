@@ -1,0 +1,21 @@
+/*Changes highlight color*/
+*::selection{
+	background-color:#bde9ed;
+}
+
+/*Scrollbar customization*/
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    background:transparent;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+	height:30px;
+    background-color:rgba(190,190,190,0.6);
+	cursor:pointer;
+	margin:2px;
+}

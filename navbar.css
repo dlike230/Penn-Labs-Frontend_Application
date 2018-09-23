@@ -49,7 +49,7 @@ Dropdown styling
 }
 
 #top_navbar .dropdown button{
-	margin-right: 2em;	
+	margin-right: 4rem;	
 	border-color:#acacac;
 	border-style:solid;
 	border-width:1px;
@@ -78,7 +78,7 @@ Dropdown styling
 }
 
 #top_navbar .dropdown-menu a:hover{
-	background-color:#c4dfee;
+	background-color:#dadada;
 }
 
 /*
@@ -91,3 +91,48 @@ Header image styling
 	centers the header graphic vertically
 	*/
 }
+
+/*
+Adjusting style for top nav bar on small screens
+This reflects Bootstrap's built-in cutoff
+*/
+@media (max-width: 769px) {
+	/*ensure that text is aligned in the center*/
+	#top_navbar li{
+		display:block;
+		margin:auto;
+		text-align:center;
+		max-width:200px;
+		min-width:20%;
+	}
+	/*ensure that the button is aligned in the center*/
+	#top_navbar button{
+		margin-right:auto!important;
+		margin-left:auto!important;
+	}
+	/*ensure that the image is aligned in the center*/
+	#top_navbar img{
+		margin-right:auto!important;
+		margin-left:auto!important;
+		margin-top:2rem;
+		margin-bottom:2rem;
+		display:block;
+	}
+	/*ensure that the dropdown is aligned in the center*/	
+	#top_navbar .dropdown-menu{
+		margin:auto;
+		margin-top:1em;	
+		background:transparent;
+	}	
+	/*gets rid of border animation
+	also readjusts hover color
+	*/		
+	#top_navbar a:hover, #top_navbar a:active, #top_navbar a:focus{
+		border:0;
+		background-color:#3a5160;
+	}	
+	#top_navbar .dropdown-menu a:hover{
+		background-color:#3a5160;
+	}
+}
+

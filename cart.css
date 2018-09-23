@@ -6,8 +6,8 @@ Styling related to the cart
 	width:0;
 	height:0;
 	position:fixed;
-	bottom:7%;
-	right:7%;
+	bottom:100px;
+	right:100px;
 	  /*
 	  Animation style used in the given example
 	  */	
@@ -43,7 +43,9 @@ Styling for the cart size indicator
 	opacity:0;
 }
 
-
+/*
+Styling for the red box that holds the number of items in the cart
+*/
 #cart_mini_number_container{
 	opacity:0;
 	position:absolute;
@@ -60,6 +62,10 @@ Styling for the cart size indicator
 	overflow:hidden;
 }
 
+/*
+Styling for the number of items in the cart.
+Separate element from #cart_mini_number_container to allow for animation
+*/
 #cart_mini_number{
 	position:relative;
 	bottom:-0.5rem;
@@ -67,23 +73,31 @@ Styling for the cart size indicator
 	text-align:center;
 }
 
+/*
+Cart image
+*/
 #cart_mini img{
 	position:absolute;
 	top:20px;
 	left:20px;
 }
 
+/*
+Adds box shadow when hovering over cart image
+*/
 #cart_mini:hover{
 	box-shadow: 0 6px 40px rgba(0, 0, 0, 0.3);
 }
 
-
+/*
+Styling for list of items in cart
+*/
 #cart_full{
 	position:absolute;
 	height:0;
 	width:0;
 	border-radius:10px;
-	background:white;
+	background:#33414A;
 	width:100%;
 	/*Ensure that the cart remains behind the open/close button*/
 	z-index:-1;
@@ -105,7 +119,7 @@ Styling for the cart size indicator
 
 #cart_full h3{
 	width:100%;
-	color: #2b3e51;
+	color: white;
 	font-size:2rem;
 }
 
@@ -116,13 +130,21 @@ Styling for the cart size indicator
 	padding-bottom:123px;
 }
 
+#cart_full ul li{
+	box-shadow:0 0 5px 0 rgba(200,200,200,0.5);
+}
+
 #cart_full ul li *{
 	display:inline;
 }
 
+/*Item name*/
 #cart_full ul li h4{
+	color:#3a5160;
 }
+/*Item price*/
 #cart_full ul li h5{
 	margin-left:50%;
+	color:green;
 }
 

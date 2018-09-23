@@ -30,12 +30,14 @@ Styling for form on front page
 	margin:auto;
 }
 
+/*Genering button styling*/
 #contact_container button{
 	display:block;
 	margin:auto;
 	margin-top:2%;
 }
 
+/*Styling for black button used in form*/
 .btn-black{
 	background: #343a40;
 	border-color: #343a40;
@@ -55,6 +57,8 @@ Styling for form on front page
 	outline:0;
 	border:none;
 }
+
+/*Spacing within form*/
 #contact_container input, #contact_container label{
 	margin:0.8rem;
 	font-weight:100;
