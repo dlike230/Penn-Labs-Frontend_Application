@@ -103,10 +103,29 @@
 			onclick="add_to_cart();">Buy</button>
 	</div>
 	
-	<!-- Cart size display(initially hidden) -->
-	
-	<div id = "cart_mini">
-		<img src = "cart_graphic.svg"/>
+	<!--
+	The container for all things related to the cart.
+	-->
+	<div id = "cart_container">
+		<!-- Cart size display(initially hidden) -->
+		<div id = "cart_mini" onclick = "toggle_cart_size()">
+			<img src = "cart_graphic.svg"/>
+		</div>
+		<div id = "cart_mini_number_container">
+			<div id ="cart_mini_number">
+				1
+			</div>
+		</div>
+		
+		<!-- container for full cart (initially hidden)-->
+		<div id = "cart_full">
+			<h3>
+				Cart Contents
+			</h3>
+			<div class = "divider"></div>
+			<ul>
+			</ul>
+		</div>
 	</div>
 	
 	
