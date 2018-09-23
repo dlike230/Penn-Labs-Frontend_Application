@@ -106,7 +106,7 @@
 	<!--
 	The container for all things related to the cart.
 	-->
-	<div id = "cart_container">
+	<div id = "cart_container" class = "gone">
 		<!-- Cart size display(initially hidden) -->
 		<div id = "cart_mini" onclick = "toggle_cart_size()">
 			<img src = "cart_graphic.svg"/>
@@ -123,7 +123,7 @@
 				Cart Contents
 			</h3>
 			<div class = "divider"></div>
-			<ul>
+			<ul class="list-group" id = "cart_update_location">
 			</ul>
 		</div>
 	</div>

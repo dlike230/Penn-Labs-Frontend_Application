@@ -79,7 +79,6 @@ Styling for the cart size indicator
 
 
 #cart_full{
-	visibility:hidden;
 	position:absolute;
 	height:0;
 	width:0;
@@ -96,6 +95,10 @@ Styling for the cart size indicator
 	overflow:hidden;
 }
 
+.gone #cart_full{
+	visibility:hidden;
+}
+
 #cart_container.triggered #cart_full{
 	visibility:visible;
 }
@@ -105,3 +108,21 @@ Styling for the cart size indicator
 	color: #2b3e51;
 	font-size:2rem;
 }
+
+#cart_full ul{
+	height:100%;
+	/*Allows user to scroll through cart*/
+	overflow-y:scroll;
+	padding-bottom:123px;
+}
+
+#cart_full ul li *{
+	display:inline;
+}
+
+#cart_full ul li h4{
+}
+#cart_full ul li h5{
+	margin-left:50%;
+}
+
