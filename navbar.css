@@ -4,6 +4,9 @@ Top navbar styling
 #top_navbar{
 	background-color:#33414A;
 	border-radius:0;
+	border-bottom-color:#9ecae3;
+	border-bottom-style:solid;
+	border-bottom-width:2px;
 }
 
 #top_navbar *{
@@ -14,7 +17,7 @@ Top navbar styling
 Animates the hover effect of the top navbar
 */
 #top_navbar a{
-	transition: 250ms ease color;
+	transition: 250ms ease color,border;
 }
 
 /*
@@ -22,6 +25,11 @@ Sets hover effect to only include color change
 */
 #top_navbar a:hover, #top_navbar a:active, #top_navbar a:focus{
 	background-color:#33414A;
+	border-bottom-color:white;
+	border-bottom-style:solid;
+	border-bottom-width:2px;
+	/*adds room for the bottom border*/
+	margin-bottom:-2px;
 }
 
 #top_navbar li{

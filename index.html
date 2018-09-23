@@ -68,6 +68,9 @@
 			We're the hottest tech company in Silicon Valley. Take a look at our site to learn more about us and what we do.
 		</p>
 	</div>
+	
+	<div class = "divider"></div>
+	
 	<!-- Contact form -->
 	<div class = "container" id = "contact">
 		<h2>Instantly reach us by filling out the form below</h2>
@@ -90,42 +93,22 @@
 		</form>
 	</div>
 	
+	<div class = "divider"></div>
+	
 	<!-- Buying area -->
-		<div class = "container" id = "projects">
+	<div class = "container" id = "projects">
 		<h2>Buy our stuff!</h2>
+		<p class = "lead">We sell the Lenn 100, our signature device, for only $350. Buy it right here!</p>
+		<button type="button" class="btn btn-success" id = "buy_button"
+			onclick="add_to_cart();">Buy</button>
 	</div>
 	
-	<div class="cd-cart-container empty">
-	   <a href="#0" class="cd-cart-trigger">
-		  Cart
-		  <ul class="count"><!-- cart items count -->
-			 <li>0</li>
-			 <li>0</li>
-		  </ul> <!-- .count -->
-	   </a>
-
-	   <div class="cd-cart">
-		  <div class="wrapper">
-			 <header>
-				<h2>Cart</h2>
-				<span class="undo">Item removed. <a href="#0">Undo</a></span>
-			 </header>
-		  
-			 <div class="body">
-				<ul>
-					<div id ="test">
-					hi
-					</div>
-				   <!-- products added to the cart will be inserted here using JavaScript -->
-				</ul>
-			 </div>
-
-			 <footer>
-				<a href="#0" class="checkout btn"><em>Checkout - $<span>0</span></em></a>
-			 </footer>
-		  </div>
-	   </div> <!-- .cd-cart -->
+	<!-- Cart size display(initially hidden) -->
+	
+	<div id = "cart_mini">
+		<img src = "cart_graphic.svg"/>
 	</div>
+	
 	
 	<!-- External JS libraries -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -135,5 +118,7 @@
 	<!-- Script for extra animation -->
 	
 	<script src ="animations.js" language = "javascript"></script>
+	<script src ="cart.js" language = "javascript"></script>	
+	<footer><span>Developed by Daniel Like</span></footer>
   </body>
 </html>

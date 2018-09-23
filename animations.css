@@ -1,3 +1,7 @@
+
+/*
+Code for animating items such that they fade in when the page is loaded
+*/
 @keyframes text_fadein{
 	0%{
 		opacity:0;
@@ -7,6 +11,9 @@
 	}
 }
 
+/*
+Code for animating buttons such that they wobble on hover
+*/
 @keyframes button_wobble{
 	0%{
 		transform:rotate(-30deg);

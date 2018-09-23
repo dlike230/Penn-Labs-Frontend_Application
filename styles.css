@@ -34,3 +34,44 @@ p.lead{
 	text-align:center;
 	max-width:80%;
 }
+
+/* footer styling */
+footer{
+	padding:1rem;
+	margin-top:4rem;
+	text-align:center;
+	width:100%;
+	background:#8a8a8a;
+	box-shadow:0 0 6px 1px #afafaf;
+}
+
+footer span{
+	color:white;
+}
+
+/*
+Styling for the page divider between page sections
+*/
+
+.divider {
+  height: 1px;
+  width:100%;
+  display:block;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+
+/*
+Styling for the button used to make purchases
+*/
+#buy_button{
+	transition:500ms ease background;
+	padding:15px;
+	padding-left:20px;
+	padding-right:20px;
+	display:block;
+	margin:auto;
+	margin-top:1rem;
+	border-radius:15px;
+}
