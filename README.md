@@ -37,6 +37,7 @@ Some example animations include:
 
 Several external graphics in the form of SVG (Scalable Vector Graphics) were used throughtout the page.
 Examples include the logo at the top left of the page and the cart open/close icons.
+One image was also taken from the Penn Labs website.
 
 ## Responsive Design
 
@@ -49,6 +50,30 @@ Besides the navbar, other parts of the page shrink to fit smaller screens, altho
 The site includes several meta tags to make it easy for search engines to pick up information about the site.
 For example, it includes a description of the page and keywords.
 I also added small bits of microdata in a few places (e.g. itemscope, itemprop, etc.).
+
+## Project structure
+
+Javascript:
+
+* animations.js uses JQuery to ensure smooth scrolling when a link to a specific part of the page is clicked.
+* form_scripts.js extracts data from the form and displays it in a Bootstrap modal.
+* cart.js keeps track of the items in the cart and manages cart animations.
+
+CSS:
+
+* forms.css styles the form in the center of the page, as well as any associated buttons.
+* styles.css handles general styling.
+* cart.css handles the appearance of the cart, as well as some of the components of cart animation that are not controlled through Javascript.
+* navbar.css positions and styles the navbar at the top of the page, as well as any associated buttons.
+* animations.css styles the page's animations that are reused throughout several areas.
+* enhancements.css adds styling to scrollbars and text highlighting.
+
+HTML:
+
+* index.html contains the entire project's HTML resources and links to all scripts and stylesheets.
+* Some HTML is generated dynamically through JavaScript, such as items in the cart.
+
+There are 
 
 ## Built With
 
