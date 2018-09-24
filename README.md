@@ -6,7 +6,7 @@ The website can be run by opening index.html.
 
 ### Prerequisites
 
-A modern web browser such as Google Chrome or Mozilla Firefox is required to run this project. I did not have enough time to fully optimize for browsers other than chrome, so some animations or visual aspects of the page may not look as good in other browsers, i.e., due to prefixing of CSS3.
+A modern web browser such as Google Chrome or Mozilla Firefox is required to run this project. I did not have enough time to fully optimize for browsers other than Chrome, so some animations or visual aspects of the page may not look as good in other browsers, i.e., due to prefixing of CSS3.
 
 ## Using the Site
 
@@ -31,6 +31,7 @@ Some example animations include:
 * The wobbling of buttons on hover
 * Button color fading
 * The appearance of a white border under navbar items on hover
+* The on-hover rotation of the image on the first part of the page
 
 ## Graphics
 
@@ -42,6 +43,11 @@ Examples include the logo at the top left of the page and the cart open/close ic
 On narrow screens, the navbar at the top of the screen collapses such that all contingent buttons are displayed in a single column.
 Part of this adjustment is performed by Bootstrap, and some is manual adjustment that was necessary for the centering and spacing of the vertical menu.
 Besides the navbar, other parts of the page shrink to fit smaller screens, although the layout does not change significantly.
+
+## Search engine optimization
+
+The site includes several meta tags to make it easy for search engines to pick up information about the site.
+For example, it includes a description of the page and keywords.
 
 ## Built With
 

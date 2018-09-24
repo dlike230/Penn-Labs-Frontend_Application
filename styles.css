@@ -14,6 +14,29 @@ h2{
 	text-align:center;
 }
 
+/*
+Centered image with hover animation
+*/
+#image_pane{
+	width:100%;
+}
+
+#image_pane img{
+	display:block;
+	margin:auto;
+	max-width:50%;
+	max-height:200px;
+	margin-top:1em;
+	margin-bottom:1em;
+	opacity:1;
+	transition:500ms ease all;
+}
+
+#image_pane img:hover{
+	transform:rotate(30deg);
+	opacity:0.5;
+}
+
 h1{
 	display:block;
 	margin:auto;
