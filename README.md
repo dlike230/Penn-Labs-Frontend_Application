@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-The website can be run by opening index.html.
+Open index.html in a modern web browser to load the site. Internet connection may be required for some external scripts and stylesheets, such as those related to Bootstrap and JQuery.
 
 ### Prerequisites
 
