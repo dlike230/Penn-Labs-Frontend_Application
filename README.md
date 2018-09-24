@@ -48,6 +48,7 @@ Besides the navbar, other parts of the page shrink to fit smaller screens, altho
 
 The site includes several meta tags to make it easy for search engines to pick up information about the site.
 For example, it includes a description of the page and keywords.
+I also added small bits of microdata in a few places (e.g. itemscope, itemprop, etc.).
 
 ## Built With
 
